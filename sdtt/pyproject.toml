@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "sdtt"
+version = "0.0.1"
+requires-python = ">= 3.10"
+authors = [
+  {name = "Justin Deschenaux", email = "justin.deschenaux@gmail.com"},
+]
+
+description = "Making discrete diffusion models very fast with distillation!"
+readme = "README.md"
+dependencies = []
+
+# [tool.setuptools.packages.find]
+# where = ["src"]
+
+#[tool.setuptools.package-data]
+# "*" = ["*.py"]
+
+# [tool.setuptools]
+# package-dir = {"sdtt" = "src"}

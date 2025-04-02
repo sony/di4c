@@ -1,0 +1,76 @@
+data:
+  S: 256
+  batch_size: 128
+  download: false
+  name: DiscreteCIFAR10
+  random_flips: true
+  root:
+  shape:
+  - 3
+  - 32
+  - 32
+  shuffle: true
+  train: true
+device: cuda
+distributed: true
+experiment_name: cifar10
+loss:
+  eps_ratio: 1.0e-09
+  min_time: 0.01
+  name: GenericAux
+  nll_weight: 0.001
+  one_forward_pass: true
+model:
+  Q_sigma: 512.0
+  ch: 128
+  ch_mult:
+  - 1
+  - 2
+  - 2
+  - 2
+  data_min_max:
+  - 0
+  - 255
+  dropout: 0.1
+  ema_decay: 0.9999
+  fix_logistic: false
+  input_channels: 3
+  low_t_logit_adjust: false
+  name: GaussianTargetRateImageX0PredEMA
+  num_res_blocks: 2
+  num_scales: 4
+  rate_sigma: 6.0
+  scale_count_to_put_attn: 1
+  skip_rescale: true
+  time_base: 3.0
+  time_embed_dim: 128
+  time_exponential: 100.0
+  time_scale_factor: 1000
+num_gpus: 4
+optimizer:
+  lr: 0.0002
+  name: Adam
+sampler:
+  eps_ratio: 1.0e-09
+  finish_strat: mean
+  initial_dist: gaussian
+  initial_dist_std: 512.0
+  min_t: 0.001
+  name: TauLeaping
+  num_steps: 100
+save_location:
+saving:
+  checkpoint_archive_freq: 200000
+  checkpoint_freq: 1000
+  enable_preemption_recovery: true
+  log_low_freq: 10000
+  low_freq_loggers:
+  - denoisingImages
+  num_checkpoints_to_keep: 2
+  preemption_start_day_YYYYhyphenMMhyphenDD: '2022-04-20'
+  prepare_to_resume_after_timeout: true
+training:
+  clip_grad: true
+  n_iters: 2000000
+  train_step_name: Standard
+  warmup: 5000
