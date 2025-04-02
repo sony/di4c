@@ -12,6 +12,14 @@ This repository is organized as follows (Section numbers follow the arXiv versio
 
 In each repository, we provide an implementation of mixture modeling on top of the teacher model and the Di4C training/inference scripts.
 
+## Model checkpoints
+
+The Di4C-distilled model checkpoints are available on [Zenodo](https://zenodo.org/records/15124163) as follows:
+- `tldr-di4c.pt` is the `student` model in Section 5.1 (Table 1).
+- `maskgit-di4c-d.pth` is the `di4c-d` model in Section 5.2 (Figure 3).
+- `sdtt6-di4c2.ckpt` is the `sdtt-6 + di4c^2` model in Section 5.3 (Figure 4).
+- `sdtt7-di4c2.ckpt` is the `sdtt-7 + di4c^2` model in Section 5.3 (Figure 4).
+
 ## Citation
 
 ```bibtex
