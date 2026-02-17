@@ -1,7 +1,7 @@
-# Di4C: Distillation of Discrete Diffusion through Dimensional Correlations
+# Di4C: Distillation of Discrete Diffusion through Dimensional Correlations [ICML 2025]
 
 This repository contains the code used in the paper "Distillation of Discrete Diffusion through Dimensional Correlations":
-- Paper is available on [arXiv](https://arxiv.org/abs/2410.08709).
+- Paper is available on [ICML proceedings](https://proceedings.mlr.press/v267/hayakawa25a.html) and [arXiv](https://arxiv.org/abs/2410.08709).
 - It was also presented at the [NeurIPS 2024 Compression Workshop](https://openreview.net/forum?id=ibxO5X7kxc).
 
 
@@ -23,10 +23,11 @@ The Di4C-distilled model checkpoints are available on [Zenodo](https://zenodo.or
 ## Citation
 
 ```bibtex
-@article{hayakawa2024distillation,
+@inproceedings{hayakawa2025distillation,
   title={Distillation of Discrete Diffusion through Dimensional Correlations},
   author={Hayakawa, Satoshi and Takida, Yuhta and Imaizumi, Masaaki and Wakaki, Hiromi and Mitsufuji, Yuki},
-  journal={arXiv preprint arXiv:2410.08709},
-  year={2024}
+  booktitle={Proceedings of the 42nd International Conference on Machine Learning},
+  pages={22259--22297}
+  year={2025}
 }
 ```
